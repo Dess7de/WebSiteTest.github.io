@@ -1,0 +1,380 @@
+@import url(reset.scss);
+@font-face {
+  font-family: Inter,sans-serif;
+  src: url(../fonts/Inter-Thin.ttf); }
+@font-face {
+  font-family: Inter,sans-serif;
+  src: url(../fonts/Inter-Light.ttf); }
+@font-face {
+  font-family: Inter,sans-serif;
+  src: url(../fonts/Inter-Medium.ttf); }
+@font-face {
+  font-family: Inter,sans-serif;
+  src: url(../fonts/Inter-ExtraLight.ttf); }
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.header-main {
+  width: 1920px;
+  height: 752px;
+  padding: 0px;
+  position: relative;
+  background-image: url(../img/header.main.svg); }
+
+.header-panel-gmail {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/GmailLogo.svg);
+  left: 100px;
+  top: 26px; }
+  .header-panel-gmail .gmail-text {
+    position: inherit;
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    left: 37px;
+    top: -11px;
+    width: 212px;
+    color: #fff; }
+  .header-panel-gmail .gmail-text-info {
+    position: relative;
+    font-family: 'Inter',sans-serif;
+    font-weight: 300;
+    line-height: 2;
+    font-size: 14;
+    top: -18px;
+    left: 123px;
+    color: #fff; }
+
+.header-panel-facebook {
+  position: absolute;
+  display: flex;
+  padding: 12px;
+  top: 26px;
+  left: 1367px;
+  height: 40px;
+  width: 40px;
+  border-radius: 6.84967px;
+  background-image: url(../img/facebook.svg); }
+
+.header-panel-basket {
+  display: flex;
+  position: absolute;
+  padding: 12px;
+  top: 26px;
+  left: 1423px;
+  height: 40px;
+  width: 40px;
+  background-image: url(../img/basket.svg); }
+
+.header-panel-in {
+  display: flex;
+  position: absolute;
+  padding: 12px;
+  top: 26px;
+  left: 1479px;
+  height: 40px;
+  width: 40px;
+  background-image: url(../img/IN.svg); }
+
+.header-panel-instagram {
+  display: flex;
+  position: absolute;
+  padding: 12px;
+  top: 26px;
+  left: 1535px;
+  height: 40px;
+  width: 40px;
+  background-image: url(../img/Instagram.svg); }
+
+.header-panel-Be {
+  position: absolute;
+  padding: 12px;
+  top: 26px;
+  left: 1591px;
+  height: 40px;
+  width: 40px;
+  background-image: url(../img/Be.svg);
+  padding-left: 20px; }
+
+.header-panel-line {
+  position: absolute;
+  width: 39px;
+  height: 0px;
+  left: 1663px;
+  top: 49px;
+  border: 0.6px solid #FFFFFF;
+  transform: rotate(90deg); }
+
+.header-panel-phone {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 1719px;
+  top: 35px;
+  background-image: url(../img/Phone.svg); }
+
+.header-panel-number {
+  position: absolute;
+  width: 95px;
+  height: 22px;
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  left: 1753px;
+  top: 36px;
+  color: #fff; }
+
+.header-line {
+  position: absolute;
+  width: 1920px;
+  height: 0px;
+  left: 0px;
+  top: 85px;
+  border: 0.5px solid #DBDFEC; }
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 120px;
+  height: 44px;
+  left: 100px;
+  top: 110px;
+  background-image: url(../img/logo.svg); }
+
+.header-logo-panel-Home {
+  position: absolute;
+  width: 43px;
+  height: 22px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  left: 786px;
+  right: 1091px;
+  top: 17px;
+  color: #fff; }
+
+.header-logo-panel-AboutUs {
+  position: absolute;
+  width: 72px;
+  height: 22px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  left: 877px;
+  top: 17px;
+  color: #fff; }
+
+.header-logo-panel-OurAgents {
+  position: absolute;
+  width: 91px;
+  height: 22px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  left: 997px;
+  top: 17px;
+  color: #FFFFFF; }
+
+.header-logo-panel-properties {
+  position: absolute;
+  width: 85px;
+  height: 22px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  left: 1136px;
+  top: 17px;
+  color: #fff; }
+
+.header-logo-panel-gallery {
+  position: absolute;
+  width: 62px;
+  height: 22px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  left: 1269px;
+  top: 17px;
+  color: #fff; }
+
+.header-logo-panel-blog {
+  position: absolute;
+  width: 38px;
+  height: 22px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  left: 1379px;
+  top: 17px;
+  color: #fff; }
+
+.header-logo-panel-blog {
+  position: absolute;
+  width: 38px;
+  height: 22px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  left: 1379px;
+  top: 17px;
+  color: #fff; }
+
+.header-logo-panel-ContactUs {
+  position: absolute;
+  width: 91px;
+  height: 22px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  left: 1465px;
+  top: 17px;
+  color: #fff; }
+
+.header-logo-panel-search {
+  position: absolute;
+  width: 57px;
+  height: 22px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  left: 1604px;
+  top: 17px;
+  color: #fff; }
+
+.header-logo-panel-AddListing {
+  position: absolute;
+  width: 87px;
+  height: 24px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  left: 1690px;
+  right: 124px;
+  top: 17px;
+  color: #fff; }
+  .header-logo-panel-AddListing .header-logo-panel-border {
+    position: absolute;
+    padding: 5px 4px;
+    width: 125px;
+    height: 28px;
+    border: 1px solid #EDEFF6;
+    border-radius: 4px;
+    top: -7px; }
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url(../fonts/PublicSans-SemiBold.ttf); }
+.header-text {
+  position: absolute;
+  width: 558px;
+  height: 72px;
+  left: 681px;
+  top: 315px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  font-family: 'Public Sans',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 47px;
+  line-height: 72px;
+  color: #EDEFF6; }
+
+.header-text-titles {
+  position: absolute;
+  width: 696px;
+  height: 56px;
+  left: 612px;
+  top: 411px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+  align-items: flex-end;
+  text-align: center;
+  color: #EDEFF6; }
+
+.header-frames {
+  position: absolute;
+  width: 1118px;
+  height: 186px;
+  left: 401px;
+  top: 617px; }
+
+.header-frame-rent {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 4px;
+  padding: 12px 24px;
+  gap: 10px;
+  position: absolute;
+  width: 84px;
+  height: 48px;
+  left: 451px;
+  top: 10px;
+  background: #4A60A1;
+  color: #fff; }
+
+.header-frame-sale {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 4px;
+  padding: 12px 24px;
+  gap: 10px;
+  position: absolute;
+  width: 84px;
+  height: 48px;
+  left: 551px;
+  top: 10px;
+  background: #fff;
+  color: #000; }
+
+.header-panel-Rectangle {
+  position: absolute;
+  width: 1096px;
+  height: 128px;
+  left: 0px;
+  top: 70px;
+  background: #FFFFFF;
+  border-radius: 8px; }
+
+/*# sourceMappingURL=main.css.map */
